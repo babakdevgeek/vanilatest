@@ -9,7 +9,9 @@ export class Card extends HTMLElement {
     this.render();
   }
   async render() {
-    const template = await fetchTemplate("./templates/card.html");
+    const template = await fetchTemplate(
+      "https://babakdevgeek.github.io/templates/card.html"
+    );
     this.root.innerHTML = template;
     const res = await fetch("https://dog.ceo/api/breeds/image/random");
     const { message } = await res.json();
