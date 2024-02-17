@@ -10,9 +10,7 @@ export class Header extends HTMLElement {
   }
 
   async render() {
-    const template = await fetchTemplate(
-      "https://babakdevgeek.github.io/templates/card.html"
-    );
+    const template = await fetchTemplate("../templates/header.html");
     this.root.innerHTML = template;
   }
 }
