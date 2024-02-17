@@ -10,8 +10,8 @@ export class Header extends HTMLElement {
   }
 
   async render() {
-    const template = await fetchTemplate("/templates/header.html");
-    this.root.innerHTML = template;
+    // const template = await fetchTemplate("/templates/header.html");
+    this.root.innerHTML = "test";
   }
 }
 
