@@ -9,7 +9,7 @@ export class FlexSection extends HTMLElement {
     this.render();
   }
   async render() {
-    const template = await fetchTemplate("../templates/flexSection.html");
+    const template = await fetchTemplate("./templates/flexSection.html");
     this.root.innerHTML = template;
     const range = 20;
     for (let x = 0; x < range; x++) {
